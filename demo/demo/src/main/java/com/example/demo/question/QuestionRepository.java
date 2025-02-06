@@ -1,8 +1,9 @@
-package com.example.demo.register;
+package com.example.demo.question;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface RegisterRepository extends JpaRepository<User, String> {
+public interface QuestionRepository extends JpaRepository<Question, Long> {
+
 }
