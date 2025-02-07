@@ -18,7 +18,7 @@ public class QuestionController {
         this.questionService = questionService;
     }
 
-    @PostMapping
+    @PostMapping("/save")
     public ResponseEntity<QuestionResponse> saveQuestion(@RequestBody @Validated QuestionRequestDto questionRequestDto) {
 
         QuestionResponse questionResponse = questionService.saveQuestion(questionRequestDto);

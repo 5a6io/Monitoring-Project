@@ -3,23 +3,29 @@ package com.example.demo.user;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @Table(name = "users")
 @NoArgsConstructor
-@Getter
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false)
     private Long id;
 
+    @Getter
+    @Setter
     @Column(nullable = false)
     private String username;
 
+    @Getter
+    @Setter
     @Column(nullable = false, length = 15)
     private String password;
 
+    @Getter
+    @Setter
     @Column(nullable = false)
     private String email;
 

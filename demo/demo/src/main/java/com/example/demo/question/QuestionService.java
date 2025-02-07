@@ -16,7 +16,8 @@ public class QuestionService {
 
         questionRepository.save(new Question(questionRequestDto.getEmail(), questionRequestDto.getUsername(), questionRequestDto.getQuestion()));
 
-        QuestionResponse questionResponse = new QuestionResponse(200, "");
+        QuestionResponse questionResponse = new QuestionResponse(200, "질문이 등록되었습니다.");
+        log.info("'{}' 질문이 등록되었습니다.", questionRequestDto.getQuestion());
 
         return questionResponse;
     }

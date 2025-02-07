@@ -1,9 +1,9 @@
 package com.example.demo.question;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
@@ -16,13 +16,17 @@ public class Question {
     @Id
     @Column(name = "q_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String listId;
+    private String q_id;
+
+    @Setter
     @Column(nullable = false)
     private String email;
 
+    @Setter
     @Column(nullable = false)
     private String username;
 
+    @Setter
     @Column(nullable = false)
     private String question;
 
