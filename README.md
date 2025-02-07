@@ -8,8 +8,9 @@
 ![Using Tool](https://go-skill-icons.vercel.app/api/icons?i=spring,mysql,postgresql,kubernetes,grafana,prometheus)
 - Spring Boot:3.4.2
 - Kubernetes:1.31.0
-- Local 환경 Database: MySQL
-- Test 환경 Database: PostgreSQL
+- Database
+  - Local: MySQL
+  - Test: PostgreSQL
 - Prometheus
 - Grafana
 - Locust
