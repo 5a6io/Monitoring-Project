@@ -25,4 +25,6 @@
 
 ### CI/CD
 
-![CI/CD] (https://go-skill-icons.vercel.app/api/icons?i=github,jenkins,argocd,docker,ansible)
+![CI/CD Tool](https://go-skill-icons.vercel.app/api/icons?i=github,jenkins,argocd,docker,ansible)
+
+![CI/CD Diagram](cicd.png)
