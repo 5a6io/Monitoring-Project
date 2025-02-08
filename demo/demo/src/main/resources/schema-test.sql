@@ -1,22 +1,22 @@
 -- 스키마 생성 --
-CREATE SCHEMA IF NOT EXISTS test;
+create schema if not exists test;
 
 -- 테이블 생성 --
-CREATE TABLE IF NOT EXISTS test.users (
-    id BIGSERIAL PRIMARY KEY,
-    username VARCHAR(5) NOT NULL,
-    password VARCHAR(15) NOT NULL,
-    email VARCHAR(20) NOT NULL,
-    CONSTRAINT idx_username UNIQUE (username),
-    CONSTRAINT idx_email UNIQUE (email)
+create table if not exists test.users (
+    id bigint primary key,
+    username varchar(5) not null,
+    password varchar(15) not null,
+    email varchar(20) not null,
+    constraint idx_username unique (username),
+    constraint idx_email unique (email)
 );
 
-CREATE TABLE IF NOT EXISTS test.questions (
-    q_id BIGSERIAL PRIMARY KEY,
-    email VARCHAR(20) NOT NULL,
-    username VARCHAR(5) NOT NULL,
-    question VARCHAR(255) NOT NULL,
-    date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    CONSTRAINT fk_username FOREIGN KEY (username) REFERENCES test.users (username) ON UPDATE CASCADE ON DELETE CASCADE,
-    CONSTRAINT fk_email FOREIGN KEY (email) REFERENCES test.users (email) ON UPDATE CASCADE ON DELETE CASCADE
+create table if not exists test.questions (
+    qid bigint primary key,
+    email varchar(20) not null,
+    username varchar(5) not null,
+    question varchar(255) not null,
+    date timestamp default current_timestamp,
+    constraint fk_username foreign key (username) references test.users (username) on update cascade on delete cascade,
+    constraint fk_email foreign key (email) references test.users (email) on update cascade on delete cascade
 );

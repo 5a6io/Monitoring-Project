@@ -1,6 +1,7 @@
 package com.example.demo.user;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -15,17 +16,17 @@ public class UserController {
         this.userService = userService;
     }
 
-    @PostMapping("/save")
-    public ResponseEntity<UserResponse> saveUser(@RequestBody @Validated UserRequestDto userRequestDto) {
-        UserResponse userResponse = userService.saveUser(userRequestDto);
+    @PostMapping(value = "/save")
+    public ResponseEntity<UserResponse> saveUser(@RequestBody @Validated SaveRequestDto saveRequestDto) {
+        UserResponse userResponse = userService.saveUser(saveRequestDto);
 
         return ResponseEntity.ok().body(userResponse);
     }
 
-    @GetMapping("/login")
-    public ResponseEntity<UserResponse> login(@RequestParam @Validated String email, @RequestParam @Validated String password) {
+    @PostMapping(value = "/login")
+    public ResponseEntity<UserResponse> login(@RequestBody @Validated LoginRequestDto loginRequestDto) {
 
-        UserResponse userResponse = userService.login(email, password);
+        UserResponse userResponse = userService.login(loginRequestDto);
 
         return ResponseEntity.ok().body(userResponse);
     }

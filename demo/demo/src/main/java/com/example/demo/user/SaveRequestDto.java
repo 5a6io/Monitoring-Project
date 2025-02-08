@@ -3,7 +3,7 @@ package com.example.demo.user;
 import lombok.Getter;
 
 @Getter
-public class UserRequestDto {
+public class SaveRequestDto {
 
     private String username;
 

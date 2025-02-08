@@ -14,9 +14,9 @@ import java.time.LocalDateTime;
 @Getter
 public class Question {
     @Id
-    @Column(name = "q_id")
+    @Column(nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String q_id;
+    private Long qid;
 
     @Setter
     @Column(nullable = false)
