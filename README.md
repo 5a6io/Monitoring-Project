@@ -25,6 +25,12 @@
 
 ### CI/CD
 
-![CI/CD Tool](https://go-skill-icons.vercel.app/api/icons?i=github,jenkins,argocd,docker,ansible)
+![CI/CD](https://go-skill-icons.vercel.app/api/icons?i=github,jenkins,argocd,docker,ansible)
 
-![CI/CD Diagram](cicd.png)
+- GitHub Webhook
+- Jenkins
+- ArgoCD
+- Docker
+- Ansible
+
+![CI/CD](cicd.png)
