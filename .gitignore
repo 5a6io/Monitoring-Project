@@ -1,3 +1,4 @@
 /kubernetes/secret-postgre.yaml
 /demo/demo/src/main/resources/application-local.properties
 /demo/demo/.env
+/kube-prometheus-stack/customvalues.yaml
