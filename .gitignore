@@ -3,3 +3,5 @@
 /demo/demo/.env
 /kubernetes/kube-prometheus-stack/customvalues.yaml
 /kubernetes/ipaddresspool.yaml
+/cicd/secrets.yaml
+/cicd/jenkins-volume.yaml
