@@ -36,10 +36,12 @@
 ![CI/CD](cicd.png)
 
 ## The Process
-1. App 서버 개발
-2. Jenkins 설치 및 서버 배포
-3. 모니터링 시스템 구축
-4. Locust 설치 및 테스트
-5. HPA와 VPA 구성
-6. 테스트 변수 바꾸며 분석
-7. Karpenter와 GKE 자동 스케줄링 비교
+|Order|✅|
+|:-----|:----:|
+|1. App 서버 개발|✅|
+|2. Jenkins 설치 및 서버 배포||
+|3. 모니터링 시스템 구축||
+|4. Locust 설치 및 테스트||
+|5. HPA와 VPA 구성||
+|6. 테스트 변수 바꾸며 분석||
+|7. Karpenter와 GKE 자동 스케줄링 비교||
