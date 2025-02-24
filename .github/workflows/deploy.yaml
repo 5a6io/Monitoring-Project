@@ -30,7 +30,6 @@ jobs:
       - name: Build Docker Image
         run: |
           cd demo
-          ls -l | grep Dockerfile
           docker build -t ${{ secrets.DOCKER_USERNAME }}/app-server .
 
       - name: Login to Docker Hub
