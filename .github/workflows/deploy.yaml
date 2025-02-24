@@ -58,7 +58,7 @@ jobs:
           chmod +x /usr/local/bin/argocd
 
       - name: ArgoCD Login
-        run: argocd login ${{ secrets.ARGOCD_SERVER }} --username ${{ ARGOCD_USERNAME }} --password ${{ secrets.ARGOCD_PASSWORD }} --insecure
+        run: argocd login ${{ secrets.ARGOCD_SERVER }} --username ${{ secrets.ARGOCD_USERNAME }} --password ${{ secrets.ARGOCD_PASSWORD }} --insecure
 
       - name: Sync ArgoCD app
         run: |
