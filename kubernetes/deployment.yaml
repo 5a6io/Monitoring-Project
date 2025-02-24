@@ -15,13 +15,7 @@ spec:
     spec:
       containers:
       - name: app-server
-        image: $(IMAGE_NAME)
-        env:
-        - name: IMAGE_NAME
-          valueFrom:
-            secretKeyRef:
-              name: app-server-secret
-              key: image_name
+        image: yoonhyemi/app-server
         resources:
           limits:
             memory: "128Mi"
