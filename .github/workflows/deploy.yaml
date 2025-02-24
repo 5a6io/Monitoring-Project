@@ -52,17 +52,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up kubectl
-        uses: google-github-actions/setup-gcloud@v0
-        with:
-          project_id: ${{ secrets.GCP_PROJECT_ID }}
-          credentials: ${{ secrets.GCP_CREDENTIALS }}
-
-      - name: Set up kubectl context
+      - name: Set up ArgoCD CLI
         run: |
-          gcloud container clusters get-credentials your-cluster-name \
-            --zone your-cluster-zone \
-            --project ${{ secrets.GCP_PROJECT_ID }}
+          curl -sSL -o /usr/local/bin/argocd https://github.com/argoproj/argo-cd/releases/download/v2.6.0/argocd-linux-amd64
+          chmod +x /usr/local/bin/argocd
+
+      - name: ArgoCD Login
+        run: argocd login ${{ secrets.ARGOCD_SERVER }} --username ${{ ARGOCD_USERNAME }} --password ${{ secrets.ARGOCD_PASSWORD }} --insecure
 
       - name: Sync ArgoCD app
         run: |
