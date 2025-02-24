@@ -3,7 +3,7 @@ create schema if not exists test;
 
 -- 테이블 생성 --
 create table if not exists test.users (
-    id bigint primary key,
+    id bigserial primary key,
     username varchar(5) not null,
     password varchar(255) not null,
     email varchar(20) not null,
@@ -12,7 +12,7 @@ create table if not exists test.users (
 );
 
 create table if not exists test.questions (
-    qid bigint primary key,
+    qid bigserial primary key,
     email varchar(20) not null,
     username varchar(5) not null,
     question varchar(255) not null,
