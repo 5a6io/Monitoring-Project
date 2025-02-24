@@ -20,12 +20,10 @@ jobs:
         with:
           java-version: 17
           distribution: 'temurin'
-
-      - name: Navigate to demo directory
-        run: cd demo
       
       - name: Build Spring Boot application with Gradle
         run: |
+          cd demo
           ls -l
           find . -name "gradlew"
           ./gradlew build -x test
