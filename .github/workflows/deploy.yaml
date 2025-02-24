@@ -24,8 +24,7 @@ jobs:
       - name: Build Spring Boot application with Gradle
         run: |
           cd demo
-          ls -l
-          find . -name "gradlew"
+          chmod +x gradlew
           ./gradlew build -x test
       
       - name: Build Docker Image
