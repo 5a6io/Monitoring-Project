@@ -17,8 +17,11 @@ spec:
       - name: app-server
         image: yoonhyemi/app-server
         resources:
-          limits:
+          requests:
             memory: "128Mi"
             cpu: "500m"
+          limits:
+            memory: "512Mi"
+            cpu: "1"
         ports:
         - containerPort: 8080
