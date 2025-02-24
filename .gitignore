@@ -1,3 +1,4 @@
 /demo/demo/src/main/resources/application-local.properties
 /kubernetes/kube-prometheus-stack/customvalues.yaml
 /cicd
+/kubernetes/secret.yaml

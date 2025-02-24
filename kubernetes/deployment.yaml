@@ -15,7 +15,13 @@ spec:
     spec:
       containers:
       - name: app-server
-        image: ${{ secrets.DOCKER_IMAGE }}
+        image: $(IMAGE_NAME)
+        env:
+        - name: IMAGE_NAME
+          valueFrom:
+            secretKeyRef:
+              name: app-server-secret
+              key: image_name
         resources:
           limits:
             memory: "128Mi"
