@@ -5,7 +5,7 @@ create schema if not exists test;
 create table if not exists test.users (
     id bigint primary key,
     username varchar(5) not null,
-    password varchar(15) not null,
+    password varchar(255) not null,
     email varchar(20) not null,
     constraint idx_username unique (username),
     constraint idx_email unique (email)
