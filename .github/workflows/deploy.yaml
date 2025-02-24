@@ -43,6 +43,7 @@ jobs:
           docker push ${{ secrets.DOCKER_USERNAME }}/app-server
 
   run-docker-image-on-gke:
+    needs: build-docker-image
     runs-on: ubuntu-latest
 
     steps:
