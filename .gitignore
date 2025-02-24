@@ -1,7 +1,3 @@
-/kubernetes/secret-postgre.yaml
 /demo/demo/src/main/resources/application-local.properties
-/demo/demo/.env
 /kubernetes/kube-prometheus-stack/customvalues.yaml
-/kubernetes/ipaddresspool.yaml
-/cicd/secrets.yaml
-/cicd/jenkins-volume.yaml
+/cicd
