@@ -25,7 +25,6 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 
 	// 회원가입 요청 검증
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
@@ -44,7 +43,11 @@ dependencies {
 	implementation 'mysql:mysql-connector-java:8.0.32'
 
 	compileOnly 'org.projectlombok:lombok'
+
+	// Metrics : Actuator + Prometheus
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	runtimeOnly 'io.micrometer:micrometer-registry-prometheus'
+
 	// PostgreSQL
 	runtimeOnly 'org.postgresql:postgresql'
 	runtimeOnly 'com.mysql:mysql-connector-j:9.2.0'
