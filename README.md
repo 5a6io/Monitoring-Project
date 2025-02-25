@@ -2,9 +2,9 @@
 
 ## The Objective
 
-- Locust로 부하테스트 실시
-- HPA와 VPA를 사용하여 스케줄링
-- Grafana로 시각화 및 분석
+- Test with Locust
+- Scheduling using HPA and VPA
+- Visualization and analysis with Grafana
 
 ### Environment
 
@@ -24,7 +24,6 @@
 
 - Prometheus
 - Grafana
-- Locust
 
 ![Architecture Diagram](Monitoring-Project.drawio.png)
 
@@ -43,10 +42,10 @@
 ## The Process
 |Order|✅|
 |:-----|:----:|
-|1. App 서버 개발|✅|
-|2. ArgoCD 설치 및 서버 배포||
-|3. 모니터링 시스템 구축||
-|4. Locust 설치 및 테스트||
-|5. HPA와 VPA 구성||
-|6. 테스트 변수 바꾸며 분석||
-|7. Karpenter와 GKE 자동 스케줄링 비교||
+|1. Develop App-server|✅|
+|2. Install ArgoCD and Deploy server|✅|
+|3. Set Prometheus&Grafana|✅|
+|4. Install Locust and Test||
+|5. Configure HPA&VPA||
+|6. Analysis with changing variables||
+|7. Compare Karpenter&GKE Auto Scheduling||

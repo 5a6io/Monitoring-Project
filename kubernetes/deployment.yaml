@@ -28,3 +28,4 @@ spec:
             cpu: "1"
         ports:
         - containerPort: 8080
+        - containerPort: 9404
