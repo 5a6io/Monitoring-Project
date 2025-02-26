@@ -44,8 +44,8 @@
 |:-----|:----:|
 |1. Develop App-server|✅|
 |2. Install ArgoCD and Deploy server|✅|
-|3. Set Prometheus&Grafana|✅|
-|4. Install Locust and Test||
-|5. Configure HPA&VPA||
+|3. Set Prometheus&Grafana||
+|4. Configure HPA|✅|
+|5. Install Locust and Test||
 |6. Analysis with changing variables||
 |7. Compare Karpenter&GKE Auto Scheduling||

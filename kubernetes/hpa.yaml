@@ -16,9 +16,9 @@ spec:
       target:
         type: Utilization
         averageUtilization: 70
-  - type: Resource  # Memory 사용률 50% 도달 시 Pod 수 늘리기
+  - type: Resource  # Memory 사용률 70% 도달 시 Pod 수 늘리기
     resource:
       name: memory
       target:
         type: Utilization
-        averageUtilization: 50
+        averageUtilization: 70
