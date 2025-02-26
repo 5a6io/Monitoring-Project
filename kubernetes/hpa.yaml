@@ -1,0 +1,24 @@
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: app-server-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: app-server
+  minReplicas: 1
+  maxReplicas: 3
+  metrics:
+  - type: Resource
+    resource: # CPU 사용률 70% 도달 시 Pod 수 늘리기기
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 70
+  - type: Resource  # Memory 사용률 50% 도달 시 Pod 수 늘리기
+    resource:
+      name: memory
+      target:
+        type: Utilization
+        averageUtilization: 50
