@@ -33,17 +33,3 @@ spec:
             cpu: "1"
         ports:
         - containerPort: 8080
-
----
-apiVersion: monitoring.coreos.com/v1
-kind: ServiceMonitor
-metadata:
-  name: app-server-monitor
-  namespace: app
-spec:
-  selector:
-    matchLabels:
-      app: app-server
-  endpoints:
-    - port: http-traffic
-      path: "/actuator/prometheus"

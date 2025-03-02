@@ -7,7 +7,7 @@ metadata:
     app: app-server
   annotations:
     prometheus.io/scrape: "true"
-    prometheus.io/path: "actuator/prometheus"
+    prometheus.io/path: "/actuator/prometheus"
     prometheus.io/part: "8080"
 spec:
   selector:
