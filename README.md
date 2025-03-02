@@ -3,7 +3,7 @@
 ## The Objective
 
 - Test with Locust
-- Scheduling using HPA and VPA
+- Scheduling using HPA
 - Visualization and analysis with Grafana
 
 ### Environment
@@ -44,7 +44,7 @@
 |:-----|:----:|
 |1. Develop App-server|✅|
 |2. Install ArgoCD and Deploy server|✅|
-|3. Set Prometheus&Grafana||
+|3. Set Prometheus&Grafana|✅|
 |4. Configure HPA|✅|
 |5. Install Locust and Test||
 |6. Analysis with changing variables||
