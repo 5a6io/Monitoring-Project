@@ -48,4 +48,3 @@
 |4. Configure HPA|✅|
 |5. Install Locust and Test||
 |6. Analysis with changing variables||
-|7. Compare Karpenter&GKE Auto Scheduling||
