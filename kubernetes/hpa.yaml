@@ -9,7 +9,7 @@ spec:
     kind: Deployment
     name: app-server
   minReplicas: 1
-  maxReplicas: 5
+  maxReplicas: 8
   metrics:
   - type: Resource
     resource: # CPU 사용률 80% 도달 시 Pod 수 늘리기기
