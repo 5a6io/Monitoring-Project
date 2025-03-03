@@ -2,7 +2,7 @@
 
 ## The Objective
 
-- Test with Locust
+- Test using Locust
 - Scheduling using HPA
 - Visualization and analysis with Grafana
 
@@ -31,7 +31,7 @@
 
 ![CI/CD](https://go-skill-icons.vercel.app/api/icons?i=github,argocd,docker)
 
-- GitHub Webhook
+- GitHub Action
 - Jenkins
 - ArgoCD
 - Docker
