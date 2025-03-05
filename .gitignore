@@ -2,3 +2,4 @@
 /kubernetes/kube-prometheus-stack/customvalues.yaml
 /cicd
 /kubernetes/secret.yaml
+/locust/__pycache__
