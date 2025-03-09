@@ -16,4 +16,4 @@ spec:
       name: cpu
       target:
         type: Utilization
-        averageUtilization: 70 # 사용률(%) = (현재 Pod의 CPU 사용량 (mCPU) / requests.cpu) * 100
+        averageUtilization: 50 # 사용률(%) = (현재 Pod의 CPU 사용량 (mCPU) / requests.cpu) * 100
