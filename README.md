@@ -5,10 +5,11 @@
 - Test using Locust
 - Scheduling using HPA
 - Visualization and analysis with Grafana
+- More than 100 rps
 
 ### Environment
 
-![Using](https://go-skill-icons.vercel.app/api/icons?i=spring,mysql,postgresql,kubernetes,gcp,terraform)
+![Using](https://go-skill-icons.vercel.app/api/icons?i=spring,mysql,postgresql,kubernetes,gcp,terraform,kafka)
 
 - Google Kubernetes Engine
 - Google Cloud SQL
@@ -17,6 +18,7 @@
 - Database
   - Local: MySQL
   - Test: PostgreSQL
+- Kafka
 
 ### Monitoring
 
@@ -48,3 +50,5 @@
 |4. Install Locust and Test|✅|
 |5. Configure HPA|✅|
 |6. Analysis with changing variables||
+|7. Configure Kafka||
+|8. Retest and Compared with prior results||

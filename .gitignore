@@ -3,3 +3,4 @@
 /cicd
 /kubernetes/secret.yaml
 /locust/__pycache__
+/kubernetes/kafka/customvalues.yaml
