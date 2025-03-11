@@ -49,6 +49,6 @@
 |3. Set Prometheus&Grafana|✅|
 |4. Install Locust and Test|✅|
 |5. Configure HPA|✅|
-|6. Analysis with changing variables||
-|7. Configure Kafka||
+|6. Analysis with changing variables|✅|
+|7. Configure Kafka|✅|
 |8. Retest and Compared with prior results||
