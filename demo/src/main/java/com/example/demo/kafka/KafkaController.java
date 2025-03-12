@@ -5,11 +5,12 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
+@RequestMapping("/kafka")
 public class KafkaController {
 
     private final KafkaProducer producer;
 
-    @PostMapping("/kafka/send")
+    @PostMapping("/send")
     public String sendMessage(@RequestParam String message) {
         producer.sendMessage(message);
 
