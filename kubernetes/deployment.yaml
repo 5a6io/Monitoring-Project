@@ -18,6 +18,8 @@ spec:
       labels:
         app: app-server
     spec:
+      nodeSelector:
+        role: app
       containers:
       - name: app-server
         image: yoonhyemi/app-server

@@ -9,16 +9,17 @@
 
 ### Environment
 
-![Using](https://go-skill-icons.vercel.app/api/icons?i=spring,mysql,postgresql,kubernetes,gcp,terraform,kafka)
+![Using](https://go-skill-icons.vercel.app/api/icons?i=spring,postgresql,kubernetes,gcp,kafka)
 
 - Google Kubernetes Engine
+  - machine: e2-standard-2 ➡️ app, e2-micro ➡️ cicd
+  - the number of default nodes: 1 ~ 2 nodes per a zone
+  - autoscaling: 0 ~ 2kube nodes per a zone. max: 6
 - Google Cloud SQL
+  - PostgreSQL 17
 - Spring Boot:3.4.2
-- Kubernetes:1.31.0
-- Database
-  - Local: MySQL
-  - Test: PostgreSQL
-- Kafka
+- Kubernetes:v1.31.5
+- Kafka:3.9.0
 
 ### Monitoring
 
@@ -34,10 +35,8 @@
 ![CI/CD](https://go-skill-icons.vercel.app/api/icons?i=github,argocd,docker)
 
 - GitHub Action
-- Jenkins
 - ArgoCD
 - Docker
-- Ansible
 
 ![CI/CD](cicd.png)
 
@@ -51,4 +50,4 @@
 |5. Configure HPA|✅|
 |6. Analysis with changing variables|✅|
 |7. Configure Kafka|✅|
-|8. Retest and Compared with prior results||
+|8. Retest and Compared with prior results|✅|
