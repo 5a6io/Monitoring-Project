@@ -1,5 +1,6 @@
 /demo/src/main/resources/application-local.properties
 /kubernetes/kube-prometheus-stack/customvalues.yaml
+/kubernetes/kafka/customvalues.yaml
 /cicd
 /kubernetes/secret.yaml
 /locust/__pycache__
