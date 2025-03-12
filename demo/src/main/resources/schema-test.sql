@@ -11,8 +11,6 @@ create table if not exists test.users (
     constraint idx_email unique (email)
 );
 
-insert into test.users (username, password, email) values ('test', 'test@1234', 'test@example.com');
-
 create table if not exists test.questions (
     qid bigserial primary key,
     email varchar(20) not null,
