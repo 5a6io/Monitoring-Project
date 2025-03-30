@@ -5,7 +5,7 @@
 - Test using Locust
 - Scheduling using HPA
 - Visualization and analysis with Grafana
-- More than 100 rps
+- More than 90 rps
 
 ### Environment
 
